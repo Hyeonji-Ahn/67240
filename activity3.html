@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        
-    </header>
+    <head>
+        <title>Tiffany Ahn's introduction</title>
+        <meta utf-8>
+        <!-- 8. id and class attributes -->
+        <style type="text/css">
+            nav{
+                font-size: large;
+                
+            }
+            .hobbyTitle{
+                color:rgb(247, 202, 201);
+                text-decoration-line: underline;
+            }
+            .favoritesTitle{
+                color:rgb(145,168,209);
+                text-decoration-line:underline;
+            }
+        </style>
+    </head>
     <body>
+        <!-- semantic markup (HTML5 element)-->
+        <header>
+            <nav>
+                <a href="#aboutMe">About Me</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#favorites">Favorites</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+        </header>
+
         <!-- 1. heading type 1 -->
         <h1>Tiffany Ahn</h1>  
         <!-- 1. heading type 2 -->
-        <h2>About Me</h2>
+        <h2 id="aboutMe">About Me</h2>
         <!-- 3. bulleted lists -->
         <ul>
             <!-- 6. inline element: strong -->
@@ -17,21 +43,44 @@
         </ul>
 
         <!-- 1. heading type 3 -->
-        <h3>hobbies</h3>
+        <h3 id="hobbies">hobbies</h3>
         <!-- 3. numbered lists -->
         <ol>
             <li>
-                <h4>Dancing</h4>
+                <h4 class="hobbyTitle">Dancing</h4>
                 <!-- 6. block element-->
                 <p> 
                     I love dancing. I am currently part of KPDC &lt; Kpop dance club &gt; in the campus </br>
                     I also have a youtube channel that I upload my <a href="https://www.youtube.com/@hyeonjitiffanyahn">dance videos</a>
                 </p>
             </li>
+            <li>
+                <h4 class="hobbyTitle">Singing</h4>
+                <!-- 6. block element-->
+                <p> 
+                    I love going Kareoke and singing. Whenever I have times, I always go to kareoke near my home to just sing.
+                </p>
+            </li>
         </ol>
 
-        <h3>favorites</h3>
+        <h3 id="favorites">favorites</h3>
+        <!-- 3. definition lists -->
+        <dl>
+            <dt class="favoritesTitle">Movie</dt>
+            <dd>Les Miserable</dd>
+            <dt class="favoritesTitle">Book</dt>
+            <dd>Devotion of suspect X by Keigo Higashino</dd>
+            <dt class="favoritesTitle">Song</dt>
+            <dd>Don Quiote - Seventeen</dd>
+            <dt class="favoritesTitle">Singer</dt>
+            <dd>Seventeen</dd>
+            <dt class="favoritesTitle">Place to Travel</dt>
+            <dd>Japan</dd>
+            <dt class="favoritesTitle">Color</dt>
+            <dd>Serenity Blue</dd>
 
-        <h3>contacts</h3>
+        </dl>
+
+        <h3 id="contracts">contacts</h3>
     </body>
 </html>
