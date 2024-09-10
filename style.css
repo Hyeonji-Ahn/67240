@@ -1,0 +1,50 @@
+/* 4. remove default text decoration */
+a{
+    text-decoration: none;
+}
+a:hover{
+    /* 1. opacity */
+    opacity: 0.5;
+}
+body{
+    /* 2. font family */
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    /* 2. font size */
+    font-size:xx-large; 
+
+    align-self: center;
+}
+.hobbyTitle{
+    /* 3. adjust margin */
+    margin:3px;
+    color:rgb(247, 202, 201);
+    /* 2. text decoration */
+    text-decoration-line: underline;
+}
+.favoritesTitle{
+    /* 1. foreground color */
+    color:rgb(145,168,209);
+    /* 2. text shadow */
+    text-shadow: 2px 2px 5px rgb(125, 170, 248);
+    
+}
+
+#name{
+    /* 2. font-style */
+    font-style: oblique;
+
+    /* 3.  border style */
+    border-bottom: dashed;
+
+    /* 3.border width */
+    max-width: fit-content;
+    
+}
+
+/* 2. hover */
+#aboutMe:hover,#hobbies:hover,#favorites:hover, #contacts:hover{
+    /* 1. background color */
+    background-color: aquamarine;
+}
