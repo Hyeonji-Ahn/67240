@@ -13,9 +13,13 @@ body{
 nav{
     /* 2. font size */
     font-size:xx-large; 
-
-    align-self: center;
+    text-align: center;
+    /* 3. backgrond image */
+    background-image: url("navBackGround.png");
+    background-size: contain;
+    padding: 20px;
 }
+
 .hobbyTitle{
     /* 3. adjust margin */
     margin:3px;
@@ -28,7 +32,16 @@ nav{
     color:rgb(145,168,209);
     /* 2. text shadow */
     text-shadow: 2px 2px 5px rgb(125, 170, 248);
-    
+}
+
+.notAvailable{
+    /* 3. visibility */
+    visibility: hidden;
+}
+
+#aboutme, #hobbies, #favorites, #contacts{
+    /* 3. centering content */
+    text-align: center;
 }
 
 #name{
@@ -46,5 +59,29 @@ nav{
 /* 2. hover */
 #aboutMe:hover,#hobbies:hover,#favorites:hover, #contacts:hover{
     /* 1. background color */
-    background-color: aquamarine;
+    background-color: rgb(125, 170, 248);
+}
+
+#me_box:hover,#hobby_box:hover,#fav_box:hover, #contacts_box:hover{
+    /* 3. background image repeat */
+    background-image: url("selectedBackGround.png");
+    background-size: contain;
+}
+
+/* 1, Descendant */
+#contacts_box li{
+    /* 3. display */
+    display: inline; 
+    margin: 4px;
+
+}
+
+/* 1. Child  */
+li > h4 {
+    border-bottom: 5px solid pink;
+}
+
+/* 2. Attribute selector */
+a[href*="Me"]{
+    font-weight: bold;
 }
