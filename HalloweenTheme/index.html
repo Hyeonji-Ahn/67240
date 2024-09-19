@@ -11,6 +11,11 @@
         <meta name="robots" content="index, nofollow">
         <meta name="keywords" content="halloween, tradition, origin, halloween traditions, pumpkins, costume">
         <link rel="stylesheet" href="stylesheet.css">
+
+        <!-- implementing google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <h1>
@@ -27,14 +32,16 @@
         </nav>
         <!-- main table with all six traditions -->
         <table>
-            <tr>
+            <tr id="title">
                 <th>Tradition</th>
                 <th>Origin Place</th>
                 <th>Origin story</th>
+                <!-- just placeholder for the bottom border to extend -->
+                <th></th>
             </tr>
-            <tr>
-                <th>Carving Jack-o’-Lanterns</th>
-                <th>
+            <tr id="jackOLantern">
+                <th class="tradition">Carving Jack-o’-Lanterns</th>
+                <th class="place">
                     Ireland 
                     <!-- Iframe for Ireland -->
                     <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=Ireland+(Ireland)&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div>
@@ -47,15 +54,20 @@
                     Earth as a ghost for eternity. The Devil gave Jack a burning lump of coal in a
                     carved-out turnip to light his way. Locals eventually began carving scary
                     faces into their own turnips to frighten away evil spirits.
+                </th>
+                <th>
                     <img src="images/jackOLantern.jpg" alt="Jack-o’-Lanterns">
                 </th>
+                
             </tr>
-            <tr>
-                <th>
+            <tr id="seeingGhosts">
+                <th class="tradition">
                     Seeing Ghosts
                 </th>
-                <th>
-                    Indo-Europe (Celtics)
+                <th class="place">
+                    Indo-Europe (Celts)
+                    <!-- Iframe for Celtics -->
+                    <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=scotland+(My%20Business%20Name)&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe></div>
                 </th>
                 <th>
                     The festival of Samhain marked the transition to the new year at the end of
@@ -63,29 +75,37 @@
                     the festival, spirits walked the Earth. Later on, Christian missionaries
                     introduced All Souls’ Day on November 2, which perpetuated the idea of the
                     living coming into contact with the dead around the same time of year.
+                </th>
+                <th>
                     <img src="images/ghosts.jpg" alt="Ghosts">
                 </th>
             </tr>
-            <tr>
-                <th>
+            <tr id="wearingScaryCostumes">
+                <th class="tradition">
                     Wearing Scary Costumes
                 </th>
-                <th>
+                <th class="place">
                     Indo-Europe (Celts)
+                    <!-- Iframe for Celtics -->
+                    <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=scotland+(My%20Business%20Name)&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe></div>
                 </th>
                 <th>
                     In order to avoid being terrorized by all the evil spirits walking the Earth
                     during Samhain, the Celts donned disguises in order to confuse the spirits
                     and be left alone.
+                </th>
+                <th>
                     <img src="images/scaryCostume.jpg" alt="scary costume">
                 </th>
             </tr>
-            <tr>
-                <th>
+            <tr id="treatOrTreating">
+                <th class="tradition">
                     Trick-or-treating
                 </th>
-                <th>
+                <th class="place">
                     Indo-Europe (Celtic) / Scottish / America
+                    <!-- Iframe for America -->
+                    <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=America+(My%20Business%20Name)&amp;t=&amp;z=4&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe></div>
                 </th>
                 <th>
                     There is much debate around the origins of trick-or-treating, but generally
@@ -107,15 +127,19 @@
                     could guess the identities of the disguised. In one version of the practice, the
                     children were rewarded with food or other treats if no one could identify
                     them.
+                </th>
+                <th>
                     <img src="images/treakOrTreating.jpg" alt="trick or treating">
                 </th>
             </tr>
-            <tr>
-                <th>
+            <tr id="bobbingForApples">
+                <th class="tradition">
                     Bobbing for Apples
                 </th>
-                <th>
+                <th class="place">
                     Rome
+                    <!-- Iframe for italia (past rome) -->
+                    <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Italia+(My%20Business%20Name)&amp;t=&amp;z=4&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
                 </th>
                 <th>
                     The game of bobbing for apples has been a staple at Halloween parties for
@@ -126,15 +150,19 @@
                     predict their future relationships based on the game. When the Romans
                     conquered the British Isles in 43 AD, the Pomona festival blended with the
                     similarly timed Samhain, a precursor to Halloween.
+                </th>
+                <th>
                     <img src="images/bobbingForApple.jpg" alt="Bobbing Apples">
                 </th>
             </tr>
-            <tr>
-                <th>
+            <tr id="candyApples">
+                <th class="tradition">
                     Candy Apples
                 </th>
-                <th>
-                    Pomona
+                <th class="place">
+                    Rome
+                    <!-- Iframe for italia (past rome) -->
+                    <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Italia+(My%20Business%20Name)&amp;t=&amp;z=4&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
                 </th>
                 <th>
                     For centuries, people have been coating fruit in syrup as a means of
@@ -150,6 +178,8 @@
                     looked good enough to eat. They became fashionable treats for
                     Halloween starting in the early 1900s and they remained popular up until the
                     1970s.
+                </th>
+                <th>
                     <img src="images/candyApple.jpg" alt="Candy Apples">
                 </th>
             </tr>

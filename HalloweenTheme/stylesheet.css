@@ -1,4 +1,64 @@
-img{
-    width: 100px;
-    height: 200px;
+/* CSS selectors were ordered primarily from generic to specific, and then alphabetically */
+/* The order was made to make sure it is easy to locate generic selectors when make large scale changes */
+/* * -> tag -> class ->id */
+/* all the child selectors are right under its parents selector */
+
+/* implementing google font */
+*{
+    font-family: "Gowun Batang", serif;
 }
+
+form{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: gray;
+    max-height: 150px;
+}
+
+footer > p{
+    color: white;
+    margin: 1%;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+img{
+    width: 70%;
+    padding: 0% 10%;
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: 1.3em;
+    padding:2.5%
+}
+
+th{
+    border-bottom: dashed red;
+}
+
+.place{
+    width:30%;
+    padding:20px
+}
+
+.tradition{
+    width:15%;
+    font-weight: bold;
+    font-size:large;
+    padding: 20px
+}
+
+#title{
+    font-size: 1.5em;
+}
+  
