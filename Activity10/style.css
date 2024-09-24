@@ -1,0 +1,59 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    text-align: center;}
+body {
+    width: 90%;
+    margin: 0 auto;}
+#content {
+    overflow: auto;}
+#nav, #feature, #footer {
+    margin: 1%;}
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;}
+.column3 {
+    margin-right: 0%;}
+li {
+    display: inline;
+    padding: 0.5em;}
+#nav, #footer {
+    background-color: #efefef;
+    padding: 0.5em 0;}
+#feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #efefef;}
+
+/* On screens that are 768 or less, apply a visible design/ layout change */
+/* two colums + one colums */
+@media screen and (max-width: 768px) {
+    .column1, .column2 {
+        width: 48%;
+        float: left;
+        margin-bottom: 1em;
+        margin-left: 1%;
+        margin-right:1%
+    }
+    .column3 {
+        width:98%;
+        float: bottom;
+        margin-bottom: 1em;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+}
+
+
+/* On screens that are 576 or less, apply a visible design/ layout change */
+/* one columns three rows */
+@media screen and (max-width: 576px) {
+    .column1, .column2, .column3 {
+        width: 98%;
+        float: bottom;
+        margin-bottom: 1em;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+}
