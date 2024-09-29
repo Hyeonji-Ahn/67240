@@ -1,0 +1,102 @@
+*{
+    text-decoration: none;
+    font-family: "Prata", serif;
+}
+
+nav{
+    text-align: center;
+}
+
+nav > a{
+    font-size: 1.25em;
+    font-weight: bold;
+    color:black;
+    margin: 4%;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    padding:0% 5% 0% 5%;
+    font-size: 1em;
+}
+
+th{
+    padding-bottom: 0.5em;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+li{
+    margin:3%
+}
+
+
+.merchandiseContainer{
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1%;
+}
+
+.merchandiseImg{
+    width: 100%
+}
+
+
+.sectionTitle{
+    text-align:center;
+}
+
+.setlistContainer{
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 23%;
+    margin: 1%;
+}
+
+.setlistContainer > h3{
+    text-align: center;
+    width: 100%;
+}
+
+#logo{
+    width: 33.3333%;
+    /* make it center of the screen */
+    margin-left:33.3333%;
+    margin-right:33.3333%;
+}
+
+#country{
+    font-size:1.25em
+}
+
+#merchandise{
+   display: flex;
+   flex:50%;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+
+#setlist{
+    display:flex;
+}
+
+#setlist1{
+    background-color: red;
+}
+#setlist2{
+    background-color: yellow;
+}
+#setlist3{
+    background-color: green;
+}
+#setlist4{
+    background-color: pink;
+}
+
+
+#tourImage{
+    width:100%
+}

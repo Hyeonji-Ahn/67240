@@ -1,0 +1,384 @@
+*{
+    text-decoration: none;
+    font-family: "Prata", serif;
+}
+
+nav{
+    text-align: center;
+}
+
+nav > a{
+    font-size: 1.25em;
+    font-weight: bold;
+    color:black;
+    margin: 3%;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    padding:0% 5% 0% 5%;
+    font-size: 1em;
+}
+
+th{
+    padding-bottom: 0.5em;
+    font-weight: 100;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+li{
+    margin:3%
+}
+
+.merchandiseContainer{
+    width:90%;
+    padding:5%;
+}
+
+.merchandiseContainer > p {
+    text-align: right;
+}
+
+.merchandiseImg{
+    width: 100%;
+}
+
+.reviewContainer{
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-right: 2%;
+    margin-bottom: 10%;
+    padding:0% 1% 0% 1%;
+    background-color: rgba(145,168,209);
+}
+
+.seat{
+    font-size: 4em;
+    display:inline;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.seatDetail{
+    display: block;
+    position:relative;
+    top:-5.5em;
+    left:4.5em
+}
+
+.sectionTitle{
+    text-align:center;
+    width:100%;
+    display: block;
+    padding-top: 2%;
+}
+
+.setlistContainer{
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 23%;
+    margin: 1%;
+}
+
+.setlistContainer > h3{
+    text-align: center;
+    width: 100%;
+}
+
+.ticketInfo{
+    display: block;
+    padding: 0 5% 0 5%
+}
+
+#logo{
+    width: 33.3333%;
+    /* make it center of the screen */
+    margin-left:33.3333%;
+    margin-right:33.3333%;
+}
+
+#country{
+    font-size:1.25em;
+    font-weight:bold;
+}
+
+#merchandise{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#movie>h3{
+    width:70%
+}
+
+#movieDescription{
+    width:30%;
+    float:left;
+    font-size: 1em;
+}
+
+#movieDetail{
+    width: 30%;
+    float: left;
+    font-size: 1em;
+}
+
+#movieReview{
+    width:60%;
+    display:flex;
+}
+
+
+#movieTicket{
+    width: 25%;
+    float:left;
+    padding: 1%;
+}
+
+#moviePoster{
+    width:18%;
+    float: left;
+    padding: 1%;
+    padding-left:10%;
+}
+
+#setlist{
+    display:flex;
+}
+
+#setlist1{
+    background-color: rgba(247,202,201,0.4);
+}
+#setlist2{
+    background-color: rgba(247,202,201,0.6);
+}
+#setlist3{
+    background-color: rgba(247,202,201,0.8);
+}
+#setlist4{
+    background-color: rgba(247,202,201,1);
+}
+
+#tourImage{
+    width:100%
+}
+
+#tickets{
+    display: flex;
+    width: 60%;
+    padding: 0 20% 0 20%;
+    justify-content: center;
+    margin-bottom: -5em;
+}
+
+#videos{
+    display:flex;
+    width:100%;
+}
+
+#videos >iframe{
+    width: 47%;
+    height: 300px;
+    margin: 1%;
+}
+
+/* On screens that are 830px or less, apply design for tablet */
+@media screen and (max-width: 830px) {
+    table{
+        width: 100%;
+        text-align: center;
+        padding:0% 5% 0% 5%;
+        font-size: 1em;
+    }
+    
+    th{
+        display: block;
+        padding-bottom: 0.5em;
+        font-weight: 100;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 1% 3% 0% 3%;
+    }
+
+    th:nth-child(1){
+        font-size: 1em;
+    }
+    th:nth-child(4){
+        visibility: hidden;
+    }
+
+    .seat{
+        font-size: 3em;
+        display:inline;
+        color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .seatDetail{
+        font-size: 0.7em;
+        display: block;
+        position:relative;
+        top:-5.5em;
+        left:4.5em
+    }
+
+    .setlistContainer{
+        box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 88%;
+        margin: 1% 6% 1% 6%;
+    }
+    
+    #merchandise{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #movie>h3{
+        visibility: hidden;
+    }
+
+    #movieDescription{
+        width:35%;
+        float:left;
+        font-size: 1em;
+        padding: 5% 0 5% 0;
+    }
+    
+    #movieDetail{
+        width: 20%;
+        float: left;
+        font-size: 1em;
+    }
+
+    #moviePoster{
+        width:23%;
+        float: left;
+        padding: 1%;
+        padding-left:10%;
+    }
+
+    #movieReview{
+        visibility: hidden;
+        height: 0px;
+    }
+    
+    #movieTicket{
+        width: 18%;
+        float:left;
+        padding: 1%;
+    }
+
+    #setlist{
+        width: 90%;
+        padding:0% 5% 0% 5%;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #subVideo{
+        visibility: hidden;
+        height: 0px;
+    }
+
+    #tickets{
+        display: flex;
+        width: 95%;
+        padding: 0 2.5% 0 2.5%;
+        justify-content: center;
+        margin-bottom: -5em;
+    }
+
+    #videos{
+        display:block;
+    }
+
+    #videos >iframe{
+        width: 98%;
+        height: 400px;
+        margin: 1%;
+    }
+}
+  
+/* On screens that are 390px or less, apply a visible design/ layout change */
+@media screen and (max-width: 390px) {
+    body { 
+        width: 100%;
+    } 
+
+    nav{
+        font-size: 0.7em;
+    }
+
+    table{
+        font-size: 0.7em;
+    }
+
+    .sectionTitle{
+        text-align:center;
+        width:100%;
+        display: block;
+        padding-top: 2%;
+        font-size: 0.8em;
+    }
+
+    .setlistContainer{
+        font-size: 0.7em;
+    }
+
+    .ticketInfo{
+        margin-bottom: -23%;
+    }
+    .ticketInfo:last-child{
+        margin-bottom: 0%;
+    }
+
+    
+    #movieDescription{
+        width:40%;
+        float:bottom;
+        font-size: 0.7em;
+        padding-bottom: 0%;
+    }
+
+    #movieDetail{
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+
+    #movieTicket{
+        width: 40%;
+        float:bottom;
+        padding: 1%;
+    }
+
+    #moviePoster{
+        width:38%;
+        float: bottom;
+        padding: 1%;
+        padding-left:5%;
+    }
+
+
+    #tickets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        padding: 0 2.5% 0 2.5%;
+        justify-content: center;
+        margin-bottom: -5em;
+        margin-left: -1.5em;
+    }
+
+    #videos >iframe{
+        width: 98%;
+        height: 250px;
+        margin: 1%;
+    }
+
+}
