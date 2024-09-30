@@ -1,6 +1,6 @@
 *{
     text-decoration: none;
-    font-family: "Prata", serif;
+    font-family: "Open Sans", serif;
 }
 
 nav{
@@ -10,8 +10,15 @@ nav{
 nav > a{
     font-size: 1.25em;
     font-weight: bold;
+    font-family: "Prata", serif;
     color:black;
     margin: 3%;
+    text-shadow: rgba(145,168,209) 1px 0 5px
+}
+
+nav > a:hover{
+   color:rgba(145,168,209);
+   transition: 400ms;
 }
 
 table{
@@ -52,15 +59,16 @@ li{
 .reviewContainer{
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
     margin-right: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     padding:0% 1% 0% 1%;
-    background-color: rgba(145,168,209);
+    background-color: rgba(247,202,201,1);
 }
 
 .seat{
     font-size: 4em;
     display:inline;
     color: rgba(0, 0, 0, 0.3);
+    font-family: "Prata", serif;
 }
 
 .seatDetail{
@@ -75,6 +83,8 @@ li{
     width:100%;
     display: block;
     padding-top: 2%;
+    font-family: "Prata", serif;
+    text-shadow: rgba(145,168,209) 1px 0 5px
 }
 
 .setlistContainer{
@@ -336,6 +346,9 @@ li{
         margin-bottom: 0%;
     }
 
+    #merchandise{
+        font-size: 0.7em;
+    }
     
     #movieDescription{
         width:40%;
