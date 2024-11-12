@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>About Me</h1>
+  <ul>
+    <li>Name: <span id="name"></span> </li>
+    <li>Hobbies: <span id="hobbies"></span> </li>
+    <li>Hometown: <span id="hometown"></span> </li>
+  </ul>
+  <script>
+    document.getElementById("name").innerHTML = "Tiffany ahn";
+    document.getElementById("hobbies").innerHTML = "Dancing";
+    document.getElementById("hometown").innerHTML = "Gwangju, South Korea";
+
+    //queryselectorAll() cannot be used as it is for getting css selector, not tag name.
+    var els = document.getElementsByTagName("li");
+    for(let i=0; i<3; i++){
+        els[i].setAttribute("class","listitem");
+        document.getElementsByClassName("listitem")[i].style.color="red";
+    }
+    
+    //attempt to create one more class
+    var item = document.createElement("li");
+    var text = document.createTextNode("Dorm: Stever");
+    item.appendChild(text);
+    document.getElementsByTagName('ul')[0].appendChild(item);
+
+  </script>
+</body>
+</html>
