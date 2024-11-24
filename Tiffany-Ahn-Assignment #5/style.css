@@ -1,0 +1,14 @@
+/* to make the div square */
+#guessTheAnimalDiv{
+    width:300px;
+    height:300px;
+}
+
+/* to fix the button to the bottom right */
+#scrollToTop{
+    position:fixed; 
+    bottom:25px; 
+    right:25px; 
+    width:100px; 
+    height:100px
+}
