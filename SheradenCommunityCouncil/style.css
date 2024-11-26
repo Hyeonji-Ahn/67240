@@ -1,0 +1,9 @@
+nav{
+    background-color: #81adc4;
+    text-decoration-color: black;
+}
+
+.card-img-overlay{
+    background-color: #81adc4a4;
+    transition-duration: 0.5s;
+}
