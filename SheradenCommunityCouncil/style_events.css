@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    font-size: 1.25rem;
+    background-color: #C5D881;
+    color: black;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    border: none; 
+}
+
+/* Buttons Hover Effect */
+.btn:hover {
+    background-color: #A1C45D; 
+    color: black; 
+}
+
+.volunteer-btn, .calendar-btn {
+    background-color: #C5D881;
+    color: black;
+}
+
+.volunteer-btn:hover, .calendar-btn:hover {
+    background-color: #A1C45D; /* Darker shade on hover */
+}
+
+/* Ensure the card is clickable */
+.card {
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+  }
+  
+  /* Box-shadow for visual feedback */
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Change image cursor */
+  .card-img-top {
+    cursor: pointer; /* Change the cursor when hovering over the image */
+  }
+  
+/* Footer Button Specific */
+.footer .btn-warning {
+    background-color: #F5B650; 
+    color: black; 
+    border: none; 
+}
+
+.footer .btn-warning:hover {
+    background-color: #D9983E; /* Darker shade on hover */
+    color: black; 
+}
+
+/* Footer Link Styles */
+.footer .text-decoration-none {
+    color: black;
+}
+
+/* Footer Links Container */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Space between the links */
+    flex-wrap: wrap; /* Allow wrapping */
+    align-items: center;
+}
+
+/* Group primary links together */
+.primary-links {
+    display: flex;
+    gap: 1rem; /* Space between primary links */
+}
+
+/* Group secondary links together */
+.secondary-links {
+    display: flex;
+    gap: 1rem; /* Space between secondary links */
+}
+
+/* Instructions */
+.instructions {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Event Titles */
+.card-title {
+    font-weight: bold; 
+    font-size: 1.75rem; /* Adjust card title size for desktop */
+}
+
+/* Event Card Text */
+.card-text {
+    font-size: 1.25rem; /* Increase the card text size for desktop */
+}
+
+/* Image Styles */
+.card-img-top {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow on images */
+}
+
+/* Desktop Image Size - 20% */
+@media (min-width: 992px) {
+    .card-img-top {
+        width: 20%; /* Reduce image size to 20% on desktop */
+    }
+
+    /* Social Media Icons - 50px height on Desktop */
+    .footer .d-flex img {
+        height: 50px !important; /* Force height to 50px for desktop */
+    }
+
+    /* Footer Links in One Row for Desktop */
+    .footer-links {
+        flex-direction: row; /* Keep links in one row on larger screens */
+    }
+
+    .primary-links {
+        display: flex;
+        gap: 2rem; /* Space between primary links */
+    }
+
+    .secondary-links {
+        display: flex;
+        gap: 2rem; /* Space between secondary links */
+    }
+}
+
+/* Mobile-specific: Keep primary links in a row, secondary links stack below */
+@media (max-width: 991px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on mobile */
+        gap: 0.5rem; /* Space between the links */
+    }
+
+    .primary-links {
+        display: flex;
+        flex-direction: row; /* Keep primary links in a row */
+        gap: 1rem;
+    }
+
+    .secondary-links {
+        display: flex;
+        flex-direction: row; /* Keep secondary links in a row */
+        gap: 1rem;
+    }
+
+    /* Reduce the size of the Volunteer and Calendar buttons in mobile */
+    .volunteer-btn, .calendar-btn {
+        font-size: 1rem; /* Smaller font size */
+        padding: 8px 8px; /* Adjust padding to make buttons smaller */
+    }
+
+    /* Reduce the size of the h1 title in mobile */
+    h1 {
+        font-size: 2.0rem; /* Adjust font size */
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #81ABC4;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.footer .text-decoration-none {
+    color: black;
+}
+
+.footer .footer-btn {
+    font-size: 1.25rem;
+}
+
+.footer .footer-text {
+    color: black;
+}
+
+.footer .d-flex img {
+    height: 24px; /* Default size for social media icons */
+}
+
+/* Drop shadow for all buttons */
+.btn, .volunteer-btn, .calendar-btn, .footer .btn-warning {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow on buttons */
+}
+
+/* Remove border around event cards */
+.card {
+    border: none; /* Remove card borders */
+}
