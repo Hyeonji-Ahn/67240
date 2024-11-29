@@ -1,5 +1,8 @@
+body {
+    font-family: 'Karla', sans-serif;
+}
+
 h1  {
-    font-family: Karla, sans-serif;
     text-align: center;
 }
 
@@ -11,7 +14,6 @@ p {
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;     */
-    font-family: Karla, sans-serif;
     max-width: 200px;
     margin: 0 auto; /* Centers the block within its container */
     text-align: center !important; /* Ensures text alignment is centered */
@@ -20,6 +22,12 @@ p {
     align-items: center;    /* Centers inline content vertically */
     height: 100px; /* Add height for vertical centering to work properly */
     padding: 10px;
+}
+
+nav{
+    background-color: #81adc4;
+    text-decoration-color: black;
+    text-align: center;
 }
 
 .Icons {
@@ -48,4 +56,71 @@ p {
     position: absolute;
     bottom: 100px;
 
+}
+/* Footer Styles */
+.footer {
+    background-color: #81ABC4;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.footer .text-decoration-none {
+    color: black;
+}
+
+.footer .footer-btn {
+    font-size: 1.25rem;
+}
+
+.footer .footer-text {
+    color: black;
+}
+
+.footer .d-flex img {
+    height: 24px; /* Default size for social media icons */
+}
+
+/* Footer Button Specific */
+.footer .btn-warning {
+    background-color: #F5B650; 
+    color: black; 
+    border: none; 
+}
+
+.footer .btn-warning:hover {
+    background-color: #D9983E; /* Darker shade on hover */
+    color: black; 
+}
+
+/* Footer Link Styles */
+.footer .text-decoration-none {
+    color: black;
+}
+
+/* Footer Links Container */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Space between the links */
+    flex-wrap: wrap; /* Allow wrapping */
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+     /* Social Media Icons - 50px height on Desktop */
+     .footer .d-flex img {
+        height: 50px !important; /* Force height to 50px for desktop */
+    }
+
+    /* Footer Links in One Row for Desktop */
+    .footer-links {
+        flex-direction: row; /* Keep links in one row on larger screens */
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on mobile */
+        gap: 0.5rem; /* Space between the links */
+    }
 }

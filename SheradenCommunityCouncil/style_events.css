@@ -9,6 +9,12 @@ h1 {
     font-weight: bold;
 }
 
+nav{
+    background-color: #81adc4;
+    text-decoration-color: black;
+    text-align: center;
+}
+
 /* Buttons */
 .btn {
     font-size: 1.25rem;

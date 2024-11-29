@@ -2,21 +2,90 @@
 <html>
 	<head>
 		<title>Contact</title>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumar+One&family=Oranienbaum&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="styles_contact.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+        <link rel="stylesheet" href="styles_contact.css">
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html"><img class="ps-2" height="75rem" src="images/logofinal.png"></a>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <h5>MENU</h5>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">About The Council</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">Neighborhood</a>                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
         <h1>Contact Us!</h1>
         <p style="text-align: center;"> Phone: 412-779-6076
             Address: 720 Sherwood Ave, Pittsburgh, PA 15204
             Email: scc15204@gmail.com</p>
-    <a href = "https://www.facebook.com/p/Sheraden-Community-Council-100064915803052/">
-        <img class = "Icons" src="images/icons.png" width="20%" alt="Icons">
-    </a>    
-    <p><iframe id="inlineFrameExample"
-        title="Inline Frame Example"
-        width="500"
-        height="400"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12143.63070214758!2d-80.05606945!3d40.45518034999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f5d37421e7a1%3A0xa3bbb3b9fedab8d6!2sSheraden%2C%20Pittsburgh%2C%20PA%2015204!5e0!3m2!1sen!2sus!4v1732651528246!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </iframe></p>
+        <a href = "https://www.facebook.com/p/Sheraden-Community-Council-100064915803052/">
+            <img class = "Icons" src="images/icons.png" width="20%" alt="social media icons">
+        </a>    
+        <p>
+            <iframe id="inlineFrameExample"
+            title="Inline Frame Example"
+            width="500"
+            height="400"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12143.63070214758!2d-80.05606945!3d40.45518034999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f5d37421e7a1%3A0xa3bbb3b9fedab8d6!2sSheraden%2C%20Pittsburgh%2C%20PA%2015204!5e0!3m2!1sen!2sus!4v1732651528246!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </iframe>
+        </p>
+
+      <!-- Footer -->
+        <footer class="py-4 footer">
+            <div class="container text-center">
+            <!-- Footer Links -->
+            <div class="d-flex justify-content-center gap-3 mb-3 footer-links">
+                <div class="primary-links">
+                    <a href="home.html" class="text-decoration-none">HOME</a>
+                    <a href="events.html" class="text-decoration-none">EVENTS</a>
+                    <a href="contact.html" class="text-decoration-none">CONTACT</a>
+                </div>
+                <div class="secondary-links">
+                    <a href="#" class="text-decoration-none">TERMS OF USE</a>
+                    <a href="#" class="text-decoration-none">PRIVACY POLICY</a>
+                </div>
+            </div>
+            
+            <!-- Button -->
+            <button class="btn btn-warning mb-3 footer-btn" onclick="window.location.href='https://example.com/contact-us';">Get Contacted!</button>
+            <p class="footer-text">WE RESPECT YOUR PRIVACY</p>
+        
+            <!-- Social Media Icons -->
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#"><img src="images\edited\5.png" alt="Facebook" height="30"></a>
+                <a href="#"><img src="images\edited\6.png" alt="Instagram" height="30"></a>
+                <a href="#"><img src="images\edited\7.jpg" alt="Twitter" height="30"></a>
+            </div>
+        
+            <p class="footer-text mt-3">Copyright © 2024 Sheraden Community Council. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
     </body>
+</html>

@@ -5,12 +5,17 @@
    * {
 	box-sizing: border-box;
     text-align: center;
+	font-family: 'Karla', sans-serif;
 	}
 
 	p { /*Short paragraph before cards*/
-		font-family: Karla, sans-serif;
 		padding: 40px;
 		font-size: 1.3rem;
+	}
+
+	nav{
+		background-color: #81adc4;
+		text-decoration-color: black;
 	}
 
 	.card { /*three cards*/
@@ -19,7 +24,6 @@
 		border-radius: 1px !important;
 		border-color: black !important;
 		display: block;
-        font-family: Karla, sans-serif;
         font-size: large;
         margin-bottom: 70px; 
 		padding: 5px;
@@ -53,7 +57,6 @@
 
 	 h1 { /*3 card headings*/
         color:#ffffff;
-		font-family: Karla, sans-serif;
 		font-style: italic;
         font-size: 1.71rem; 
 		font-style: italic;
@@ -61,6 +64,55 @@
 	    margin: 0px;
 	    text-align: center;
 	} 
+	
+/* Footer Styles */
+.footer {
+    background-color: #81ABC4;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.footer .text-decoration-none {
+    color: black;
+}
+
+.footer .footer-btn {
+    font-size: 1.25rem;
+}
+
+.footer .footer-text {
+    color: black;
+}
+
+.footer .d-flex img {
+    height: 24px; /* Default size for social media icons */
+}
+
+/* Footer Button Specific */
+.footer .btn-warning {
+    background-color: #F5B650; 
+    color: black; 
+    border: none; 
+}
+
+.footer .btn-warning:hover {
+    background-color: #D9983E; /* Darker shade on hover */
+    color: black; 
+}
+
+/* Footer Link Styles */
+.footer .text-decoration-none {
+    color: black;
+}
+
+/* Footer Links Container */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Space between the links */
+    flex-wrap: wrap; /* Allow wrapping */
+    align-items: center;
+}
 
 /*media queries (cards stay same size for different screen sizes)*/
 @media screen and (min-width : 1200px) {
@@ -86,6 +138,22 @@
 	.card-img-top {
 		padding-bottom: 45px;
 	}
+	  /* Social Media Icons - 50px height on Desktop */
+	  .footer .d-flex img {
+        height: 50px !important; /* Force height to 50px for desktop */
+    }
+
+    /* Footer Links in One Row for Desktop */
+    .footer-links {
+        flex-direction: row; /* Keep links in one row on larger screens */
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on mobile */
+        gap: 0.5rem; /* Space between the links */
+    }
 }
 
 @media screen and (min-width : 892px) {
