@@ -1,0 +1,231 @@
+/* CSS coded sorted alphabetically */
+
+/* Sorted as they appear on page and in code*/ 
+
+* {
+box-sizing: border-box;
+text-align: center;
+font-family: 'Karla', sans-serif;
+}
+
+nav{
+	background-color: #81adc4;
+	text-decoration-color: black;
+}
+
+div.container-lg.text-center.d-flex.flex-wrap.align-items-center.bg-info{ /*background behind cards is white instead of default blue*/
+	background-color: #ffffff;
+}
+
+h1 { /*3 card headings*/
+	font-style: italic;
+	font-size: 1.71rem; 
+	padding-top: 4px;
+	margin: 0px;
+	text-align: center;
+	font-weight: bold;
+} 
+
+.card { /*three cards*/
+	border:none;
+	background-color:#c5d881 !important;
+	border-radius: 1px !important;
+	border-color: black !important;
+	display: block;
+	margin-bottom: 70px; 
+	padding: 5px;
+}
+
+.card .btn-primary { /*buttons that are children of cards*/
+	background-color:#f5b650 !important;
+	border-radius: 1px !important;
+	border-color: black !important; 
+	display: block;
+	padding: 10px;
+}
+
+.card-img-top { /*two images within in cards*/
+	border-radius: 0px !important;
+	padding: 10px;
+}
+
+/* Buttons */
+.btn {
+    font-size: 1.25rem;
+    background-color: #C5D881;
+    color: black;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    border: none; 
+}
+
+/* Drop shadow for all buttons */
+.btn, .footer .btn-warning {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow on buttons */
+}	
+
+/* Group primary links together */
+.primary-links {
+    display: flex;
+    gap: 1rem; /* Space between primary links */
+}
+
+/* Group secondary links together */
+.secondary-links {
+    display: flex;
+    gap: 1rem; /* Space between secondary links */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #81ABC4;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.footer .text-decoration-none {
+    color: black;
+}
+
+.footer .footer-btn {
+    font-size: 1.25rem;
+}
+
+.footer .footer-text {
+    color: black;
+}
+
+.footer .d-flex img {
+    height: 24px; /* Default size for social media icons */
+}
+
+/* Footer Button Specific */
+.footer .btn-warning {
+    background-color: #F5B650; 
+    color: black; 
+    border: none; 
+}
+
+.footer .btn-warning:hover {
+    background-color: #D9983E; /* Darker shade on hover */
+    color: black; 
+}
+
+/* Footer Link Styles */
+.footer .text-decoration-none {
+    color: black;
+}
+
+/* Footer Links Container */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Space between the links */
+    flex-wrap: wrap; /* Allow wrapping */
+    align-items: center;
+}
+
+#headerText { /*Short paragraph before cards*/
+	padding: 40px;
+	font-size: 1.3rem;
+}
+
+
+/*media queries (cards stay same size for different screen sizes)*/
+@media screen and (min-width : 1200px) {
+	.card {
+		height: 600px !important;
+	}
+	.supportus {
+		font-size: 40px;
+		padding-bottom: 100px;
+	}
+	.card-img-top {
+		padding-bottom: 15px;
+	}
+}
+
+@media screen and (min-width : 992px) {
+	.card {
+		height: 500px !important;
+	}
+	.supportus {
+		font-size: 27px;
+	}
+	.card-img-top {
+		padding-bottom: 45px;
+	}
+	  /* Social Media Icons - 50px height on Desktop */
+	  .footer .d-flex img {
+        height: 50px !important; /* Force height to 50px for desktop */
+    }
+
+    /* Footer Links in One Row for Desktop */
+    .footer-links {
+        flex-direction: row; /* Keep links in one row on larger screens */
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on mobile */
+        gap: 0.5rem; /* Space between the links */
+    }
+}
+
+@media screen and (min-width : 892px) {
+	.card {
+		height: 450px !important;
+	}
+	.supportus {
+		font-size: 27px;
+		padding-bottom: 55px;
+	}
+}
+
+@media screen and (min-width : 768px) and (max-width: 991px) {
+	.card {
+		height: 250px !important;
+	}
+	.supportus {
+		font-size: 17px;
+		padding-bottom: 25px;
+	}
+}
+
+@media screen and (max-width : 577px) {
+	.card {
+		height: 400px !important;
+	}
+	.supportus {
+		font-size: 15px;
+		padding-bottom: 25px;
+	}
+}
+
+@media screen and (max-width : 576px) {
+	.card {
+		height: 500px !important;
+	}
+	.supportus {
+		font-size: 30px;
+		/* padding-bottom: 100px; */
+	}
+}
+
+@media screen and (max-width : 457px) {
+	.card {
+		height: 400px !important;
+	}
+	.supportus {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width : 276px) {
+	.card {
+		height: 300px !important;
+	}
+	.supportus {
+		font-size: 15px;
+	}
+}

@@ -6,57 +6,39 @@ h1  {
     text-align: center;
 }
 
-p {
-    /* font-family: Karla, sans-serif;
-    text-align: center !important;
-    max-width: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center;     */
-    max-width: 200px;
-    margin: 0 auto; /* Centers the block within its container */
-    text-align: center !important; /* Ensures text alignment is centered */
-    display: flex;
-    justify-content: center; /* Centers inline content horizontally */
-    align-items: center;    /* Centers inline content vertically */
-    height: 100px; /* Add height for vertical centering to work properly */
-    padding: 10px;
-}
-
 nav{
     background-color: #81adc4;
     text-decoration-color: black;
     text-align: center;
 }
 
-.Icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Centers the iframe block within its container */
-    height: 50px; /* Ensure iframe has a defined height */
-    width: 100px;  /* Ensure iframe has a defined width */
-    border: none;  /* Optional: remove borders for testing */
-    padding: 10px;
+/* Buttons */
+.btn {
+    font-size: 1.25rem;
+    background-color: #C5D881;
+    color: black;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    border: none; 
 }
 
-#inlineFrameExample {
-    /* display: flex;
-    justify-content: center; 
-    align-content: center;     */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Centers the iframe block within its container */
-    height: 300px; /* Ensure iframe has a defined height */
-    width: 500px;  /* Ensure iframe has a defined width */
-    border: none;  /* Optional: remove borders for testing */
-    padding: 10px;
-    position: absolute;
-    bottom: 100px;
-
+/* Drop shadow for all buttons */
+.btn, .footer .btn-warning {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow on buttons */
 }
+
+/* Group primary links together */
+.primary-links {
+    display: flex;
+    gap: 1rem; /* Space between primary links */
+}
+
+/* Group secondary links together */
+.secondary-links {
+    display: flex;
+    gap: 1rem; /* Space between secondary links */
+}
+
+
 /* Footer Styles */
 .footer {
     background-color: #81ABC4;
@@ -105,6 +87,43 @@ nav{
     flex-wrap: wrap; /* Allow wrapping */
     align-items: center;
 }
+
+/* social media icons styling */
+.Icons { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    height: 50px; 
+    width: 100px;  
+    border: none;  
+    padding: 10px;
+}
+/* contact info paragraph  */
+#contactInfo{ 
+    max-width: 200px;
+    margin: 0 auto; 
+    text-align: center !important; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100px; 
+    padding: 10px;
+    font-size: 0.9rem;
+}
+/* iframe styling */
+#inlineFrameExample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    height: 300px; 
+    width: 500px;  
+    border: none;  
+    bottom: 80px;
+}
+
+
 
 @media (min-width: 992px) {
      /* Social Media Icons - 50px height on Desktop */

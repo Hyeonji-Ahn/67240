@@ -45,21 +45,21 @@ nav{
     transition: transform 0.3s ease; 
   }
   
-  /* Hover effect for cards */
-  .card:hover {
-    transform: scale(1.05); /* Slightly scale up the card on hover */
-  }
-  
-  /* Box-shadow for visual feedback */
-  .card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Change image cursor */
-  .card-img-top {
-    cursor: pointer; /* Change the cursor when hovering over the image */
-  }
-  
+/* Hover effect for cards */
+.card:hover {
+transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+
+/* Box-shadow for visual feedback */
+.card:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Change image cursor */
+.card-img-top {
+cursor: pointer; /* Change the cursor when hovering over the image */
+}
+
 /* Footer Button Specific */
 .footer .btn-warning {
     background-color: #F5B650; 

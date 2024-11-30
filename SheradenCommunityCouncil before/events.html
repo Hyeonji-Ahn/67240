@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheraden Community Council - Events</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style_events.css">
+</head>
+<body>
+      
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- SCC logo (also link to homepage) -->
+        <a class="navbar-brand" href="home.html"><img class="ps-2" height="75rem" src="images/logofinal.png"></a>
+        <!-- menu button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <h5>MENU</h5>
+        </button>
+        <!-- menu items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- home page -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <!-- about SCC Council (currently not functional) -->
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">About The Council</a>
+            </li>
+            <!-- about Sheraden neighborhood -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Neighborhood</a>                  
+            </li>
+            <!-- Sheraden News page (currently not functional) -->
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">News</a>
+            </li>
+            <!-- events page -->
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <!-- contact us page -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Events Header with Buttons -->
+    <section class="mb-5 events-header">
+        <div class="row align-items-center">
+          <!-- Events Title -->
+          <div class="col-auto">
+            <h1 class="mb-0">Events</h1>
+          </div>
+          <!-- Buttons -->
+          <div class="col-auto ms-auto d-flex gap-4">
+            <button class="btn btn-warning mb-3 footer-btn" onclick="window.location.href='https://example.com/volunteer';">Volunteer</button>
+            <button class="btn btn-warning mb-3 footer-btn" onclick="window.location.href='https://example.com/calendar';">Calendar</button>
+          </div>
+        </div>
+      </section>  
+
+    <!-- Instructions -->
+    <p id="calendarInput" class="text-muted mb-5 instructions">
+        CLICK HERE TO SUBMIT YOUR EVENT TO THIS CALENDAR
+    </p>
+    <script src="eventsScript.js"></script>
+      
+    <!-- Event Cards -->
+    <div class="row g-4">
+        <div class="col-12 col-md-12 col-lg-12" onclick="window.location.href='https://example.com/sheraden-shines'">
+        <div class="card h-100">
+            <div class="d-flex">
+            <img src="images\edited\1.jpg" class="card-img-top" alt="Sheraden Shines">
+            <div class="card-body d-flex flex-column justify-content-start ps-3">
+                <h5 class="card-title">Sheraden Shines</h5>
+                <p class="card-text text-muted">12/06/2024</p>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12" onclick="window.location.href='https://example.com/spooktacular'">
+        <div class="card h-100">
+            <div class="d-flex">
+            <img src="images\edited\2.jpg" class="card-img-top" alt="Spooktacular">
+            <div class="card-body d-flex flex-column justify-content-start ps-3">
+                <h5 class="card-title">Spooktacular</h5>
+                <p class="card-text text-muted">10/26/2024</p>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12" onclick="window.location.href='https://example.com/community-picnic'">
+        <div class="card h-100">
+            <div class="d-flex">
+            <img src="images\edited\3.jpg" class="card-img-top" alt="Community Picnic">
+            <div class="card-body d-flex flex-column justify-content-start ps-3">
+                <h5 class="card-title">Community Picnic</h5>
+                <p class="card-text text-muted">09/07/2024</p>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12" onclick="window.location.href='https://example.com/birthday-remembrance'">
+        <div class="card h-100">
+            <div class="d-flex">
+            <img src="images\edited\4.jpg" class="card-img-top" alt="Birthday Remembrance">
+            <div class="card-body d-flex flex-column justify-content-start ps-3">
+                <h5 class="card-title">Birthday Remembrance</h5>
+                <p class="card-text text-muted">08/10/2024</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 footer">
+    <div class="container text-center">
+      <!-- Footer Links -->
+      <div class="d-flex justify-content-center gap-3 mb-3 footer-links">
+          <div class="primary-links">
+            <a href="home.html" class="text-decoration-none">HOME</a>
+            <a href="events.html" class="text-decoration-none">EVENTS</a>
+            <a href="contact.html" class="text-decoration-none">CONTACT</a>
+          </div>
+          <div class="secondary-links">
+            <a href="#" class="text-decoration-none">TERMS OF USE</a>
+            <a href="#" class="text-decoration-none">PRIVACY POLICY</a>
+          </div>
+      </div>
+    
+      <!-- Button -->
+      <button class="btn btn-warning mb-3 footer-btn" onclick="window.location.href='https://example.com/contact-us';">Get Contacted!</button>
+      <p class="footer-text">WE RESPECT YOUR PRIVACY</p>
+  
+      <!-- Social Media Icons -->
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#"><img src="images\edited\5.png" alt="Facebook" height="30"></a>
+        <a href="#"><img src="images\edited\6.png" alt="Instagram" height="30"></a>
+        <a href="#"><img src="images\edited\7.jpg" alt="Twitter" height="30"></a>
+      </div>
+
+      <p class="footer-text mt-3">Copyright © 2024 Sheraden Community Council. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

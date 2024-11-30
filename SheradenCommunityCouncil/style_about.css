@@ -8,9 +8,35 @@ nav{
     text-align: center;
 }
 
+/* Buttons */
+.btn {
+    font-size: 1.25rem;
+    background-color: #C5D881;
+    color: black;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    border: none; 
+}
+
+/* Drop shadow for all buttons */
+.btn, .footer .btn-warning {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow on buttons */
+}
+
 .card-img-overlay{
     background-color: #81adc4a4;
     transition-duration: 0.5s;
+}
+
+/* Group primary links together */
+.primary-links {
+    display: flex;
+    gap: 1rem; /* Space between primary links */
+}
+
+/* Group secondary links together */
+.secondary-links {
+    display: flex;
+    gap: 1rem; /* Space between secondary links */
 }
 
 /* Footer Styles */
