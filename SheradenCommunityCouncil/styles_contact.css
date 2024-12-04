@@ -105,9 +105,9 @@ nav{
     display: flex;
     justify-content: center; 
     align-items: center;   
-    padding: 10px;
-    font-size: 0.9rem;
+    padding: 5px;
 }
+
 /* iframe styling */
 #inlineFrameExample {
     display: flex;
