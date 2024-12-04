@@ -99,14 +99,12 @@ nav{
     padding: 10px;
 }
 /* contact info paragraph  */
-#contactInfo{ 
-    max-width: 200px;
+#contactInfo{
     margin: 0 auto; 
     text-align: center !important; 
     display: flex;
     justify-content: center; 
     align-items: center;   
-    height: 100px; 
     padding: 10px;
     font-size: 0.9rem;
 }
@@ -121,8 +119,6 @@ nav{
     border: none;  
     bottom: 80px;
 }
-
-
 
 @media (min-width: 992px) {
      /* Social Media Icons - 50px height on Desktop */
