@@ -98,6 +98,8 @@ nav{
     .footer-links {
         flex-direction: row; /* Keep links in one row on larger screens */
     }
+
+    
 }
 
 @media (max-width: 991px) {
